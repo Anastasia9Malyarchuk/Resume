@@ -1,0 +1,224 @@
+.page {
+    padding: 30px 0 70px;
+    color: #303030;
+    font-family: 'Lato', sans-serif;
+}
+
+.person-avatar {
+    position: relative;
+    width: 102px;
+    height: 102px;
+    border-radius: 50%;
+    overflow-x: hidden;
+}
+
+.person-avatar img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.person-position {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: #303030;
+}
+
+.person-name {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 77px;
+    line-height: 1;
+    text-indent: -4px;
+    margin-right: -9px;
+    letter-spacing: 0.4px;
+    margin-bottom: 0;
+}
+
+.person-info {
+
+}
+
+.person-info__title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.person-info__text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.nav {
+
+}
+
+.nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.nav li:not(:last-child) {
+    margin-right: 30px;
+}
+
+.nav a {
+    color: #2C55BE;
+}
+
+.nav:hover,
+.nav:focus {
+    color: #2C55BE;
+}
+
+.icons ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.icons li:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.content h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 28px;
+}
+
+.content h3 {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 0;
+}
+
+.content p {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.content a,
+.content a:hover,
+.content a:focus {
+    color: #2C55BE;
+}
+
+.content .small {
+    display: block;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #777777;
+    margin-bottom: 12px;
+}
+
+.content ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.content ul li {
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 6px; 
+}
+
+.content img {
+    max-width: 100%;
+}
+
+.person-avatar-large {
+    position: relative;
+    padding-top: 50%;
+}
+
+.person-avatar-large   img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+@media (max-width: 1199px) {
+    .person-name {
+        font-size: 64px;
+        text-indent: -3px;
+        margin-right: -4px;
+        letter-spacing: 0.6px;
+    }
+}
+
+@media (max-width: 991px) {
+    .person-name {
+        font-size: 57px;
+        margin-right: -8px;
+        letter-spacing: 0.8px;
+    }
+    .icons ul {
+        display: flex;
+    }
+
+    .icons li:not(:last-child) {
+        margin-bottom: 0;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .person-name {
+        font-size: 62px;
+    }
+    .page {
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 575px) {
+    .person-avatar-large {
+        padding-top: 58.125%;
+    }
+}
+
+@media (max-width: 440px) {
+    .person-name {
+        font-size: 44px;
+    }
+    .page {
+        padding-top: 0;
+    }
+    .nav li {
+        font-size: 14px;
+    }
+    .nav li:not(:last-child) {
+        margin-right: 16px;
+    }
+    .content h2 {
+        margin-bottom: 20px;
+    }
+}
